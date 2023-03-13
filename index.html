@@ -1,63 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-  <title>Example Page with Grid System</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <header>
-    <h1>Example Page</h1>
-    <nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <title>Example Page with Grid System</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Example Page</h1>
+      <nav>
+        <button
+          class="hamburger"
+          aria-label="Show Navigation Menu"
+          aria-expanded="false"
+          tabindex="0"
+        >
+          ☰
+        </button>
+        <!-- Navigation items -->
+        <div class="navigation-items" aria-hidden="true">
+          <button class="close-btn" aria-label="Hide Navigation Menu">x</button>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Products</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <h2>Welcome to Example Page</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+          sodales, orci et commodo lacinia, purus metus faucibus mi, at rhoncus
+          dolor lacus vel dui. Phasellus feugiat, ex vitae pharetra tincidunt,
+          sapien sapien varius turpis, vel volutpat sapien nibh in eros. Donec
+          pellentesque, nisl quis ullamcorper auctor, ipsum sem blandit lectus,
+          vel elementum velit tellus vel nulla. Integer euismod, est non
+          pellentesque egestas, arcu justo efficitur ipsum, eget gravida nibh
+          lectus sed sapien. Nam non ante ipsum. Curabitur euismod augue et
+          rhoncus semper.
+        </p>
+        <a href="#" class="cta-button">Learn More</a>
+      </section>
+      <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid-container">
+          <div class="product-card">
+            <img src="product-one.jpg" alt="Photo of our first product" />
+            <h3>Product One</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              sodales, orci et commodo lacinia, purus metus faucibus mi, at
+              rhoncus dolor lacus vel dui.
+            </p>
+          </div>
+          <div class="product-card">
+            <img src="product-two.jpg" alt="Photo of our second product" />
+            <h3>Product Two</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              sodales, orci et commodo lacinia, purus metus faucibus mi, at
+              rhoncus dolor lacus vel dui.
+            </p>
+          </div>
+          <div class="product-card">
+            <img src="product-three.jpg" alt="Photo of our third product" />
+            <h3>Product Three</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              sodales, orci et commodo lacinia, purus metus faucibus mi, at
+              rhoncus dolor lacus vel dui.
+            </p>
+          </div>
+          <div class="product-card">
+            <img src="product-four.jpg" alt="Photo of our fourth product" />
+            <h3>Product Four</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              sodales, orci et commodo lacinia, purus metus faucibus mi, at
+              rhoncus dolor lacus vel dui.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Our Products</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
         <li><a href="#">Contact Us</a></li>
       </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="hero">
-      <h2>Welcome to Example Page</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sodales, orci et commodo lacinia, purus metus faucibus mi, at rhoncus dolor lacus vel dui. Phasellus feugiat, ex vitae pharetra tincidunt, sapien sapien varius turpis, vel volutpat sapien nibh in eros. Donec pellentesque, nisl quis ullamcorper auctor, ipsum sem blandit lectus, vel elementum velit tellus vel nulla. Integer euismod, est non pellentesque egestas, arcu justo efficitur ipsum, eget gravida nibh lectus sed sapien. Nam non ante ipsum. Curabitur euismod augue et rhoncus semper.</p>
-      <a href="#" class="cta-button">Learn More</a>
-    </section>
-    <section id="products">
-      <h2>Our Products</h2>
-      <div class="product-grid-container">
-        <div class="product-card">
-          <img src="product-one.jpg" alt="Photo of our first product">
-          <h3>Product One</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sodales, orci et commodo lacinia, purus metus faucibus mi, at rhoncus dolor lacus vel dui.</p>
-        </div>
-        <div class="product-card">
-          <img src="product-two.jpg" alt="Photo of our second product">
-          <h3>Product Two</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sodales, orci et commodo lacinia, purus metus faucibus mi, at rhoncus dolor lacus vel dui.</p>
-        </div>
-        <div class="product-card">
-          <img src="product-three.jpg" alt="Photo of our third product">
-          <h3>Product Three</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sodales, orci et commodo lacinia, purus metus faucibus mi, at rhoncus dolor lacus vel dui.</p>
-        </div>
-        <div class="product-card">
-          <img src="product-four.jpg" alt="Photo of our fourth product">
-          <h3>Product Four</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sodales, orci et commodo lacinia, purus metus faucibus mi, at rhoncus dolor lacus vel dui.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <ul>
-      <li><a href="#">Privacy Policy</a></li>
-      <li><a href="#">Terms of Service</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-    <p>Example Page &copy; 2021</p>
-  </footer>
-</body>
+      <p>Example Page &copy; 2021</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
 </html>
-
