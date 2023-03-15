@@ -36,7 +36,7 @@ header {
   align-items: center;
 }
 
-.navigation-items[aria-hidden="false"] {
+.navigation-items.drawer {
   flex-direction: column;
   align-items: flex-end;
   position: fixed;
@@ -244,20 +244,20 @@ footer a {
     flex-basis: 100%;
   }
 
-  .navigation-items[aria-hidden="true"] {
+  .navigation-items {
     opacity: 0;
     margin-right: -100%;
   }
 
-  .navigation-items[aria-hidden="true"] ul {
+  .navigation-items ul {
     display: none;
   }
 
-  .navigation-items[aria-hidden="false"] button {
+  .navigation-items.drawer button {
     display: block;
   }
 
-  .navigation-items[aria-hidden="false"] ul {
+  .navigation-items.drawer ul {
     display: flex;
   }
 

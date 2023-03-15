@@ -19,7 +19,7 @@ const openMenu = () => {
   hamburgerMenu.setAttribute("aria-expanded", true);
 
   // Navigation items
-  navigationItems.setAttribute("aria-hidden", false);
+  navigationItems.classList.add('drawer')
 };
 
 const closeMenu = () => {
@@ -27,7 +27,7 @@ const closeMenu = () => {
   hamburgerMenu.setAttribute("aria-expanded", false);
 
   // Navigation items
-  navigationItems.setAttribute("aria-hidden", true);
+  navigationItems.classList.remove('drawer')
 };
 
 hamburgerMenu.addEventListener("click", toggleHamburgerMenu, false);
